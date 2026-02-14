@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import { ThemeProvider } from "@/app/providers/theme-provider";
 import { Navbar } from "@/app/components/layout/Navbar";
 import { Footer } from "@/app/components/layout/Footer";
+import { ScrollToTop } from "@/app/components/ScrollToTop";
 import "./globals.css";
 
 const inter = Inter({
@@ -75,6 +76,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-body antialiased bg-[var(--color-background)] text-[var(--color-text-primary)]">
         <ThemeProvider>
+          <ScrollToTop />
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />

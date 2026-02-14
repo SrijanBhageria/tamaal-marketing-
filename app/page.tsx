@@ -355,40 +355,42 @@ export default function HomePage() {
           <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product, index) => (
               <StaggerItem key={index}>
-                <motion.div
-                  className="group relative overflow-hidden rounded-3xl cursor-pointer"
-                  whileHover={{ y: -8 }}
-                  transition={{ duration: 0.4 }}
-                >
-                  <div className={`aspect-[4/5] ${product.bgColor} p-6 flex flex-col justify-between relative overflow-hidden`}>
-                    {/* Decorative corner accent */}
-                    <motion.div 
-                      className="absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-30 group-hover:opacity-50 transition-opacity duration-500"
-                      style={{ backgroundColor: product.accentColor }}
-                    />
-                    
-                    <div 
-                      className="w-12 h-12 rounded-full backdrop-blur-sm flex items-center justify-center relative z-10 border"
-                      style={{ 
-                        backgroundColor: `color-mix(in srgb, ${product.accentColor} 10%, white)`,
-                        borderColor: `color-mix(in srgb, ${product.accentColor} 20%, transparent)`
-                      }}
-                    >
-                      <Leaf className="w-6 h-6" style={{ color: product.accentColor }} />
-                    </div>
-                    <div className="relative z-10">
-                      <p className="text-sm text-[var(--color-text-muted)] mb-1">{product.tagline}</p>
-                      <h3 className="font-heading text-xl font-semibold text-[var(--color-text-primary)]">
-                        {product.name}
-                      </h3>
-                      {/* Accent underline */}
+                <Link href="/products">
+                  <motion.div
+                    className="group relative overflow-hidden rounded-3xl cursor-pointer"
+                    whileHover={{ y: -8 }}
+                    transition={{ duration: 0.4 }}
+                  >
+                    <div className={`aspect-[4/5] ${product.bgColor} p-6 flex flex-col justify-between relative overflow-hidden`}>
+                      {/* Decorative corner accent */}
                       <motion.div 
-                        className="mt-3 h-0.5 w-8 rounded-full group-hover:w-16 transition-all duration-500"
+                        className="absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-30 group-hover:opacity-50 transition-opacity duration-500"
                         style={{ backgroundColor: product.accentColor }}
                       />
+                      
+                      <div 
+                        className="w-12 h-12 rounded-full backdrop-blur-sm flex items-center justify-center relative z-10 border"
+                        style={{ 
+                          backgroundColor: `color-mix(in srgb, ${product.accentColor} 10%, white)`,
+                          borderColor: `color-mix(in srgb, ${product.accentColor} 20%, transparent)`
+                        }}
+                      >
+                        <Leaf className="w-6 h-6" style={{ color: product.accentColor }} />
+                      </div>
+                      <div className="relative z-10">
+                        <p className="text-sm text-[var(--color-text-muted)] mb-1">{product.tagline}</p>
+                        <h3 className="font-heading text-xl font-semibold text-[var(--color-text-primary)]">
+                          {product.name}
+                        </h3>
+                        {/* Accent underline */}
+                        <motion.div 
+                          className="mt-3 h-0.5 w-8 rounded-full group-hover:w-16 transition-all duration-500"
+                          style={{ backgroundColor: product.accentColor }}
+                        />
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
               </StaggerItem>
             ))}
           </StaggerContainer>
