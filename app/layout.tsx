@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopOnNavigate from "./components/ScrollToTopOnNavigate";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${cormorant.variable} ${manrope.variable} antialiased`}
       >
+        <ScrollToTopOnNavigate />
         {children}
         <ScrollToTop />
       </body>

@@ -1,16 +1,28 @@
 "use client";
 
+import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 
 export default function GrainParticles() {
-  const particles = Array.from({ length: 12 }, (_, i) => ({
-    id: i,
-    size: 2 + Math.random() * 4,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    duration: 8 + Math.random() * 12,
-    delay: Math.random() * 5,
-  }));
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Generate particle data only on client after mount to avoid hydration mismatch
+  // (Math.random() would differ between server and client)
+  const particles = useMemo(() => {
+    if (!mounted) return [];
+    return Array.from({ length: 12 }, (_, i) => ({
+      id: i,
+      size: 2 + Math.random() * 4,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      duration: 8 + Math.random() * 12,
+      delay: Math.random() * 5,
+    }));
+  }, [mounted]);
 
   return (
     <div
