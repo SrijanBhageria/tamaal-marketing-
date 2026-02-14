@@ -91,10 +91,10 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu button — 44px min touch target */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`flex p-2 md:hidden ${isHomeHero ? "text-white" : "text-[#111111]"}`}
+            className={`flex min-h-[44px] min-w-[44px] items-center justify-center md:hidden ${isHomeHero ? "text-white" : "text-[#111111]"}`}
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}

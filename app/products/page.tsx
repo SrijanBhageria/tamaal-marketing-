@@ -60,7 +60,7 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-[#F4F7F2]">
       <Navbar />
 
-      <main className="pt-16">
+      <main className="pt-20">
         {/* Product hero */}
         <section className="relative aspect-[3/1] overflow-hidden bg-[#2F6F4F]">
           <Image
@@ -72,12 +72,12 @@ export default function ProductsPage() {
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#2F6F4F]/90 to-[#2F6F4F]/60" />
-          <div className="absolute inset-0 flex items-center px-6 lg:px-16">
+          <div className="absolute inset-0 flex items-center px-4 sm:px-6 lg:px-16">
             <SectionReveal>
-              <h1 className="font-display text-5xl font-semibold text-white md:text-6xl">
+              <h1 className="font-display text-4xl font-semibold text-white sm:text-5xl md:text-6xl">
                 Our Grains
               </h1>
-              <p className="mt-4 max-w-xl text-lg text-white/90">
+              <p className="mt-3 max-w-xl text-base text-white/90 sm:mt-4 sm:text-lg">
                 A range crafted for every kitchen. Quality you can see, taste, and trust.
               </p>
             </SectionReveal>
@@ -85,16 +85,16 @@ export default function ProductsPage() {
         </section>
 
         {/* Category tabs */}
-        <section className="sticky top-16 z-30 border-b border-[#E5E7EB] bg-white/90 backdrop-blur-sm">
-          <div className="mx-auto flex max-w-7xl justify-center gap-2 px-6 py-4 lg:px-8">
+        <section className="sticky top-20 z-30 border-b border-[#E5E7EB] bg-white/95 backdrop-blur-sm">
+          <div className="mx-auto flex max-w-7xl justify-center gap-2 overflow-x-auto px-4 py-3 lg:px-8 lg:py-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`rounded-full px-6 py-2 text-sm font-medium transition-all ${
+                className={`min-h-[44px] shrink-0 rounded-full px-5 py-3 text-sm font-medium transition-all touch-manipulation ${
                   activeCategory === cat
                     ? "bg-[#2F6F4F] text-white"
-                    : "text-[#6B7280] hover:bg-[#F4F7F2] hover:text-[#111111]"
+                    : "text-[#374151] bg-[#F4F7F2] hover:bg-[#E5E7EB] hover:text-[#111111]"
                 }`}
               >
                 {cat}

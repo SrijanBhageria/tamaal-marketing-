@@ -10,8 +10,8 @@ export default function ContactPage() {
     <div className="min-h-screen bg-[#F4F7F2]">
       <Navbar />
 
-      <main className="pt-16">
-        <section className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
+      <main className="pt-20">
+        <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <SectionReveal>
             <h1 className="font-display text-4xl font-semibold text-[#111111] md:text-5xl">
               Get in Touch
