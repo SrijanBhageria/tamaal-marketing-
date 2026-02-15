@@ -7,44 +7,144 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SectionReveal from "../components/SectionReveal";
 
-const categories = ["All", "Basmati", "Traditional", "Specialty"];
+const categories = ["All", "26kg", "30kg"];
 
 const products = [
   {
     id: 1,
-    name: "Tamaal Supreme Basmati",
+    name: "Tamaal 24 Carat Sella Basmati Rice",
     category: "Basmati",
-    description: "Aged for 18 months. Long grains, delicate fragrance.",
-    accent: "from-[#2F6F4F] to-[#4E8A68]",
-    initial: "S",
-    pattern: "grain-light",
+    weight: "26kg",
+    description: "Extra long basmati rice. Premium quality, delicate fragrance.",
+    image: "/products/TAMAAL_24_CARAT_SELA BAS_RICE_26KG_CC_processed_by_imagy.png",
   },
   {
     id: 2,
-    name: "Tamaal Golden Sona",
-    category: "Traditional",
-    description: "The everyday classic. Fluffy, versatile, trusted.",
-    accent: "from-[#C4A962] to-[#a89050]",
-    initial: "G",
-    pattern: "grain-warm",
+    name: "Tamaal Biryani Special Rice 1",
+    category: "Basmati",
+    weight: "26kg",
+    description: "Extra long basmati rice, perfect for biryani.",
+    image: "/products/TAMAAL_BIRYANI_SPECIAL_RICE_1_26KG_CC_processed_by_imagy.png",
   },
   {
     id: 3,
-    name: "Tamaal Heritage Red",
-    category: "Specialty",
-    description: "Nutrient-rich. Earthy flavour. Ancient grains.",
-    accent: "from-[#6B4423] to-[#8B5A2B]",
-    initial: "H",
-    pattern: "grain-earth",
+    name: "Tamaal Classic Sella Basmati Rice",
+    category: "Basmati",
+    weight: "26kg",
+    description: "Classic sella extra long basmati rice. The everyday favourite.",
+    image: "/products/TAMAAL_CLASSIC_SELA_BAS_RICE_26KG _CC_processed_by_imagy.png",
   },
   {
     id: 4,
-    name: "Tamaal Royal Basmati",
+    name: "Tamaal Daily Sella Basmati Rice",
     category: "Basmati",
-    description: "Premium export grade. Extra-long, aromatic.",
-    accent: "from-[#2F6F4F] via-[#3d7a5a] to-[#1a4d35]",
-    initial: "R",
-    pattern: "grain-deep",
+    weight: "26kg",
+    description: "Daily sella extra long basmati rice. Fluffy, versatile, trusted.",
+    image: "/products/05-12-2025 TAMAAL DAILY SELA BAS. RICE 26KG CC_processed_by_imagy.png",
+  },
+  {
+    id: 5,
+    name: "Tamaal Dubar Supreme Rice 4",
+    category: "Basmati",
+    weight: "26kg",
+    description: "Dubar Supreme extra long basmati rice. Premium export grade.",
+    image: "/products/05-12-2025 TAMAAL DUBAR SUPREME RICE 4 26KG CC_processed_by_imagy.png",
+  },
+  {
+    id: 6,
+    name: "Tamaal Magic Sella Basmati Rice",
+    category: "Basmati",
+    weight: "26kg",
+    description: "Magic sella extra long basmati rice. Aromatic and long-grained.",
+    image: "/products/05-12-2025 TAMAAL MAGIC SELA BAS. RICE 26KG CC_processed_by_imagy.png",
+  },
+  {
+    id: 7,
+    name: "Tamaal Mogra Delight Rice 5",
+    category: "Basmati",
+    weight: "26kg",
+    description: "Mogra Delight extra long basmati rice. Fragrant and delicate.",
+    image: "/products/05-12-2025 TAMAAL MOGRA DELIGHT RICE 5 26KG CC_processed_by_imagy.png",
+  },
+  {
+    id: 8,
+    name: "Tamaal Platinum Sella Basmati Rice",
+    category: "Basmati",
+    weight: "26kg",
+    description: "Platinum sella extra long basmati rice. Premium quality.",
+    image: "/products/05-12-2025 TAMAAL PLATINUM SELA BAS. RICE 26KG CC_processed_by_imagy.png",
+  },
+  {
+    id: 9,
+    name: "Tamaal Prime Gold Rice 2",
+    category: "Basmati",
+    weight: "26kg",
+    description: "Prime Gold extra long basmati rice. Golden grains, superior taste.",
+    image: "/products/05-12-2025 TAMAAL PRIME GOLD RICE 2 26KG CC_processed_by_imagy.png",
+  },
+  {
+    id: 10,
+    name: "Tamaal Super Tibar Rice 3",
+    category: "Basmati",
+    weight: "26kg",
+    description: "Super Tibar extra long basmati rice. Perfect for special occasions.",
+    image: "/products/05-12-2025 TAMAAL SUPER TIBAR RICE 3 26KG CC_processed_by_imagy.png",
+  },
+  {
+    id: 11,
+    name: "Tamaal 1121 Golden Sella",
+    category: "Basmati",
+    weight: "26kg",
+    description: "1121 Golden Sella extra long basmati rice. Premium 1121 variety.",
+    image: "/products/12-01-2026 TAMAAL 1121 GOLDEN SELLA 26KG CC_processed_by_imagy.png",
+  },
+  {
+    id: 12,
+    name: "Tamaal Biryani Sella Basmati Rice",
+    category: "Basmati",
+    weight: "30kg",
+    description: "Biryani sella basmati rice. Ideal for biryani and pilafs.",
+    image: "/products/14-10-2025 TAMAL BIRYANI SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
+  },
+  {
+    id: 13,
+    name: "Tamaal Classic Sella Basmati Rice (30kg)",
+    category: "Basmati",
+    weight: "30kg",
+    description: "Classic sella basmati rice in 30kg pack. The everyday favourite.",
+    image: "/products/14-10-2025 TAMAL CLASSIC SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
+  },
+  {
+    id: 14,
+    name: "Tamaal Daily Sella Basmati Rice (30kg)",
+    category: "Basmati",
+    weight: "30kg",
+    description: "Daily sella basmati rice in 30kg pack. Fluffy and versatile.",
+    image: "/products/14-10-2025 TAMAL DAILY SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
+  },
+  {
+    id: 15,
+    name: "Tamaal Pearl Sella Basmati Rice",
+    category: "Basmati",
+    weight: "30kg",
+    description: "Pearl sella basmati rice. Premium pearled grains.",
+    image: "/products/14-10-2025 TAMAL PEARL SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
+  },
+  {
+    id: 16,
+    name: "Tamaal Platinum XXXL Sella Basmati Rice",
+    category: "Basmati",
+    weight: "30kg",
+    description: "Platinum XXXL sella basmati rice. Extra-long grains, premium grade.",
+    image: "/products/14-10-2025 TAMAL PLATINUM XXXL SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
+  },
+  {
+    id: 17,
+    name: "Tamaal Prime Sella Basmati Rice",
+    category: "Basmati",
+    weight: "30kg",
+    description: "Prime sella basmati rice in 30kg pack. Export quality.",
+    image: "/products/14-10-2025 TAMAL PRIME SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
   },
 ];
 
@@ -54,7 +154,7 @@ export default function ProductsPage() {
   const filteredProducts =
     activeCategory === "All"
       ? products
-      : products.filter((p) => p.category === activeCategory);
+      : products.filter((p) => p.weight === activeCategory);
 
   return (
     <div className="min-h-screen bg-[#F4F7F2]">
@@ -103,9 +203,9 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        {/* Product grid — design-only cards, no images */}
+        {/* Product grid */}
         <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2">
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 [&>*]:flex [&>*]:min-h-0 [&>*]:h-full [&>*]:flex-col">
             <AnimatePresence mode="wait">
               {filteredProducts.map((product, i) => (
                 <motion.div
@@ -114,40 +214,31 @@ export default function ProductsPage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.4 }}
+                  className="min-h-0"
                 >
-                  <SectionReveal delay={i * 0.05}>
+                  <SectionReveal delay={i * 0.05} className="h-full">
                     <motion.div
                       whileHover={{ y: -6 }}
-                      className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:shadow-xl"
+                      className="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:shadow-xl"
                     >
-                      {/* Designed card header — gradient + pattern + initial */}
-                      <div
-                        className={`relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-gradient-to-br ${product.accent}`}
-                      >
-                        {/* Subtle grain pattern overlay */}
-                        <div
-                          className="absolute inset-0 opacity-[0.08]"
-                          style={{
-                            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20h2M4 18h2M8 22h2M12 16h2M16 20h2M20 18h2M24 22h2M28 16h2M32 20h2M36 18h2M2 24h2M6 28h2M10 26h2M14 30h2M18 24h2M22 28h2M26 26h2M30 30h2M34 24h2M38 28h2' stroke='%23fff' stroke-width='0.5' fill='none'/%3E%3C/svg%3E")`,
-                          }}
+                      {/* Product image - main focus */}
+                      <div className="relative aspect-[3/4] shrink-0 overflow-hidden bg-[#E5E7EB]">
+                        <Image
+                          src={product.image}
+                          alt={product.name}
+                          fill
+                          className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                          sizes="(max-width: 768px) 100vw, 50vw"
                         />
-                        {/* Soft radial highlight */}
-                        <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-white/20 blur-2xl" />
-                        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/10 to-transparent" />
-                        {/* Large initial */}
-                        <span className="font-display text-[8rem] font-light leading-none text-white/90 drop-shadow-sm md:text-[9rem]">
-                          {product.initial}
-                        </span>
-                        {/* Category pill */}
-                        <span className="absolute left-5 top-5 rounded-full border border-white/40 bg-white/15 px-3 py-1.5 text-xs font-medium tracking-wide text-white backdrop-blur-sm">
-                          {product.category}
+                        <span className="absolute left-4 top-4 rounded-full border border-white/40 bg-white/90 px-2.5 py-1 text-xs font-medium tracking-wide text-[#374151] backdrop-blur-sm">
+                          {product.weight}
                         </span>
                       </div>
-                      <div className="p-6">
-                        <h3 className="font-display text-xl font-semibold text-[#111111]">
+                      <div className="flex min-h-0 flex-1 flex-col px-4 py-3">
+                        <h3 className="font-display text-base font-semibold text-[#111111] line-clamp-2">
                           {product.name}
                         </h3>
-                        <p className="mt-2 leading-relaxed text-[#6B7280]">
+                        <p className="mt-1 line-clamp-2 text-sm leading-snug text-[#6B7280]">
                           {product.description}
                         </p>
                       </div>
