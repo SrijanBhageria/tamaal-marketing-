@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/app/components/ui/Container";
 import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { CONTACT } from "@/app/constants/contact";
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -101,26 +102,26 @@ export function Footer() {
               <ul className="space-y-2.5">
                 <li>
                   <a
-                    href="mailto:hello@tamaal.com"
+                    href={`mailto:${CONTACT.email}`}
                     className="flex items-center gap-2 text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors duration-200 text-sm"
                   >
                     <Mail size={14} />
-                    <span>hello@tamaal.com</span>
+                    <span>{CONTACT.email}</span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="tel:+911234567890"
+                    href={`tel:${CONTACT.phones[0].replace(/\s/g, "")}`}
                     className="flex items-center gap-2 text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors duration-200 text-sm"
                   >
                     <Phone size={14} />
-                    <span>+91 123 456 7890</span>
+                    <span>{CONTACT.phones[0]}</span>
                   </a>
                 </li>
                 <li>
                   <div className="flex items-center gap-2 text-[var(--color-text-muted)] text-sm">
                     <MapPin size={14} className="flex-shrink-0" />
-                    <span>New Delhi, India</span>
+                    <span>Barhi, Haryana – 131101, India</span>
                   </div>
                 </li>
               </ul>

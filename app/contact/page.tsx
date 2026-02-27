@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SectionReveal from "../components/SectionReveal";
+import { CONTACT } from "../constants/contact";
 
 export default function ContactPage() {
   return (
@@ -84,21 +85,34 @@ export default function ContactPage() {
                   <h3 className="font-display text-lg font-semibold text-[#111111]">
                     Contact Information
                   </h3>
+                  <p className="mt-1 text-sm text-[#6B7280]">{CONTACT.companyName}</p>
                   <ul className="mt-4 space-y-4">
                     <li className="flex items-center gap-3 text-[#6B7280]">
-                      <Mail className="h-5 w-5 text-[#2F6F4F]" />
-                      info@tamaal.com
+                      <Mail className="h-5 w-5 shrink-0 text-[#2F6F4F]" />
+                      <a href={`mailto:${CONTACT.email}`} className="hover:text-[#2F6F4F]">
+                        {CONTACT.email}
+                      </a>
                     </li>
-                    <li className="flex items-center gap-3 text-[#6B7280]">
-                      <Phone className="h-5 w-5 text-[#2F6F4F]" />
-                      +91 XXX XXX XXXX
+                    <li className="flex items-start gap-3 text-[#6B7280]">
+                      <Phone className="mt-0.5 h-5 w-5 shrink-0 text-[#2F6F4F]" />
+                      <span className="flex flex-col gap-1">
+                        {CONTACT.phones.map((num) => (
+                          <a key={num} href={`tel:${num.replace(/\s/g, "")}`} className="hover:text-[#2F6F4F]">
+                            {num}
+                          </a>
+                        ))}
+                      </span>
                     </li>
                     <li className="flex items-start gap-3 text-[#6B7280]">
                       <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#2F6F4F]" />
                       <span>
-                        India
+                        <span className="font-medium text-[#111111]">Mill Address:</span>
                         <br />
-                        Distribution nationwide
+                        {CONTACT.millAddress.line1}
+                        <br />
+                        {CONTACT.millAddress.line2}
+                        <br />
+                        {CONTACT.millAddress.line3}
                       </span>
                     </li>
                   </ul>
@@ -114,10 +128,10 @@ export default function ContactPage() {
                     distributors, and food service partners across India.
                   </p>
                   <a
-                    href="mailto:partnerships@tamaal.com"
+                    href={`mailto:${CONTACT.email}`}
                     className="mt-6 inline-block font-medium text-[#2F6F4F] hover:underline"
                   >
-                    partnerships@tamaal.com →
+                    {CONTACT.email} →
                   </a>
                 </div>
 

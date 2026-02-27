@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CONTACT } from "../constants/contact";
 
 export default function Footer() {
   return (
@@ -57,9 +58,18 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-lg font-medium">Connect</h4>
             <ul className="mt-4 space-y-3 text-white/80">
-              <li>Distribution inquiries</li>
-              <li>Partnership opportunities</li>
-              <li>info@tamaal.com</li>
+              <li>{CONTACT.companyName}</li>
+              <li>
+                <a href={`mailto:${CONTACT.email}`} className="transition-colors hover:text-white">
+                  {CONTACT.email}
+                </a>
+              </li>
+              <li>
+                <a href={`tel:${CONTACT.phones[0].replace(/\s/g, "")}`} className="transition-colors hover:text-white">
+                  {CONTACT.phones[0]}
+                </a>
+              </li>
+              <li className="text-white/70 text-sm">Barhi, Haryana – 131101</li>
             </ul>
           </div>
         </div>
