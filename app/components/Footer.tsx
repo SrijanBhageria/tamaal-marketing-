@@ -11,8 +11,7 @@ export default function Footer() {
               Tamaal
             </Link>
             <p className="mt-4 max-w-md font-light leading-relaxed text-white/90">
-              Rooted in the richness of India. Every grain tells a story of soil,
-              tradition, and modern care.
+              Rooted in the richness of India. Trust built on every grain — consistent quality, dependable rice, every batch, every time.
             </p>
           </div>
 

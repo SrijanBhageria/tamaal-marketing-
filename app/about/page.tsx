@@ -29,10 +29,10 @@ export default function AboutPage() {
             <SectionReveal>
               <Quote className="mx-auto h-8 w-8 text-white/40 sm:h-10 sm:w-10 md:h-12 md:w-12" />
               <blockquote className="mt-3 font-display max-w-4xl text-center text-2xl font-light leading-snug text-white sm:mt-4 sm:text-3xl md:text-4xl lg:text-5xl">
-                We didn&apos;t invent rice. We just decided to honour it.
+                We didn&apos;t create rice. We chose to honour it with the consistency and care it deserves.
               </blockquote>
               <p className="mt-8 text-sm font-medium uppercase tracking-[0.2em] text-white/60">
-                Our story
+                Our Story
               </p>
             </SectionReveal>
           </div>
@@ -44,22 +44,23 @@ export default function AboutPage() {
             <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 lg:items-center">
               <SectionReveal>
                 <span className="text-sm font-medium uppercase tracking-[0.2em] text-[#2F6F4F]">
-                  Who we are
+                  Our Story
                 </span>
                 <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-[#111111] sm:text-4xl md:text-5xl">
-                  Born from the soil
+                  Rooted in India. Trusted Beyond Borders.
                 </h2>
                 <div className="mt-8 space-y-5 sm:mt-10 sm:space-y-6">
                   <p className="text-base leading-relaxed text-[#6B7280] sm:text-lg">
-                    Tamaal was born from a simple belief: Indian rice deserves to be
-                    celebrated at the level it has always deserved. For generations,
-                    our farmers have tended to these grains with care — we&apos;re here to
-                    bring that care to every packet, every plate.
+                    In India, rice is more than a staple — it is comfort, culture, and continuity passed down through generations. It feeds everyday meals, festive gatherings, and countless moments that bring families together. Tamaal was born from the belief that something so essential should be handled with greater discipline, respect, and consistency.
                   </p>
                   <p className="text-base leading-relaxed text-[#6B7280] sm:text-lg">
-                    We blend tradition with modern quality assurance. Old-world
-                    values meet new-world standards. The result? Rice that feels
-                    both timeless and trustworthy.
+                    Every grain that carries the Tamaal name goes through a carefully managed journey of selection, evaluation, and quality-controlled processing. Our focus is simple: deliver rice that cooks reliably, tastes wholesome, and maintains uniform performance — whether it is served in a home kitchen, a large catering setup, or an international dining table.
+                  </p>
+                  <p className="text-base leading-relaxed text-[#6B7280] sm:text-lg">
+                    We combine the richness of Indian agricultural heritage with structured modern quality practices, ensuring that the grain retains its natural character while meeting the expectations of both domestic and global markets.
+                  </p>
+                  <p className="text-base leading-relaxed text-[#6B7280] sm:text-lg font-medium text-[#111111]">
+                    We do not try to reinvent rice. We focus on preserving its integrity and presenting it at a standard worthy of every plate it reaches.
                   </p>
                 </div>
               </SectionReveal>
@@ -86,10 +87,18 @@ export default function AboutPage() {
         <section className="bg-[#2F6F4F] py-14 sm:py-20 md:py-28">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <SectionReveal>
-              <p className="text-center font-display text-xl font-light leading-relaxed text-white sm:text-2xl md:text-3xl lg:text-4xl">
-                We&apos;re not a startup. We&apos;re not a corporation. We&apos;re custodians of
-                something that has fed families for centuries — and we take that
-                responsibility seriously.
+              <p className="text-center text-sm font-medium uppercase tracking-[0.2em] text-white/70">
+                Who We Are
+              </p>
+              <p className="mt-6 text-center font-display text-xl font-light leading-relaxed text-white sm:text-2xl md:text-3xl lg:text-4xl">
+                We don&apos;t position ourselves as a startup or a faceless corporation.
+                We stand as custodians of a timeless staple that has fed homes for centuries — and we take that responsibility with discipline, sincerity, and long-term commitment.
+              </p>
+              <p className="mt-6 text-center font-display text-lg font-light leading-relaxed text-white/95">
+                Tamaal quietly bridges the journey between harvest and home, delivering rice that feels rooted in India yet consistent enough to be trusted across regions and borders alike.
+              </p>
+              <p className="mt-4 text-center font-display text-lg font-light leading-relaxed text-white/95">
+                Because when a grain travels from local kitchens to global tables, it should carry the same assurance of quality, familiarity, and trust.
               </p>
             </SectionReveal>
           </div>
@@ -121,8 +130,7 @@ export default function AboutPage() {
                     Our Mission
                   </h3>
                   <p className="mt-4 leading-relaxed text-[#6B7280]">
-                    To make premium Indian rice accessible without compromise —
-                    quality that families can trust, tables can celebrate.
+                    To provide consistently reliable, premium-quality rice that households, food businesses, and global partners can depend on — every batch, every time.
                   </p>
                 </div>
               </motion.div>
@@ -142,8 +150,7 @@ export default function AboutPage() {
                     Our Vision
                   </h3>
                   <p className="mt-4 leading-relaxed text-[#6B7280]">
-                    A nation where every grain tells a story. Where Tamaal becomes
-                    synonymous with trust, warmth, and the richness of India.
+                    To build Tamaal as a name that represents trust, consistency, and the enduring richness of Indian rice, valued equally in domestic kitchens and international markets.
                   </p>
                 </div>
               </motion.div>

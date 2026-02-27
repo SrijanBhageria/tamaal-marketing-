@@ -13,28 +13,28 @@ const timeline = [
     step: "01",
     title: "Sourcing",
     description:
-      "We partner with trusted farming communities across India's rice heartlands. Every paddy is traceable to its origin.",
+      "Each lot is carefully evaluated through a structured selection process to ensure uniform grain quality, maturity, and consistency before it is approved for further processing.",
     icon: Sprout,
   },
   {
     step: "02",
     title: "Processing",
     description:
-      "State-of-the-art facilities with minimal intervention. We preserve the grain's natural goodness at every stage.",
+      "Handled in state-of-the-art, hygienic facilities where controlled systems and precise supervision preserve the grain's natural strength, aroma, and cooking performance while maintaining strict quality and safety standards.",
     icon: Factory,
   },
   {
     step: "03",
     title: "Testing",
     description:
-      "Rigorous quality checks. From field to pack, every batch meets our exacting standards.",
+      "Every batch undergoes detailed quality inspection. Grain length, texture, moisture balance, and overall purity are thoroughly assessed to ensure it meets our defined benchmarks of consistency and reliability.",
     icon: FlaskConical,
   },
   {
     step: "04",
     title: "Delivery",
     description:
-      "Sealed for freshness. Delivered with care. From our hands to your table.",
+      "Sealed to retain freshness. Packed with care. Supplied with consistency — so every pack that reaches you performs just as expected, every time.",
     icon: Truck,
   },
 ];
@@ -71,7 +71,7 @@ export default function QualityPage() {
                 Our Quality Promise
               </h1>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:mt-6 sm:text-lg">
-                Institutional standards. Transparent process. Trust built on every grain.
+                Defined standards. Transparent processes. Trust built on every grain.
               </p>
             </SectionReveal>
           </div>
@@ -82,10 +82,10 @@ export default function QualityPage() {
           <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
             <SectionReveal>
               <p className="text-center font-display text-xl font-light leading-relaxed text-[#111111] md:text-3xl">
-                From the moment the seed touches soil to the moment Tamaal reaches your kitchen — we control the journey.
+                From the moment a grain is selected to the time it reaches your kitchen, every stage is guided by disciplined quality control and consistent process management.
               </p>
               <p className="mt-4 text-center text-base font-medium uppercase tracking-widest text-[#2F6F4F]">
-                No shortcuts. No compromise.
+                No shortcuts. No compromise. Only dependable quality, batch after batch.
               </p>
             </SectionReveal>
           </div>

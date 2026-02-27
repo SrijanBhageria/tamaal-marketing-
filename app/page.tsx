@@ -15,21 +15,21 @@ const pillars = [
     icon: Leaf,
     title: "Soil to Table",
     description:
-      "Sourced from India's finest paddy fields. Every grain carries the story of the land it grew in.",
+      "Every grain is thoughtfully selected through a structured evaluation process, ensuring uniform quality, dependable performance, and a standard you can trust in every meal.",
     delay: 0,
   },
   {
     icon: Droplets,
     title: "Pure & Natural",
     description:
-      "Minimal processing. No additives. Just clean, wholesome rice the way nature intended.",
+      "Handled with care to preserve natural aroma, strength, and cooking character — clean, wholesome rice that stays true to its nature while meeting modern quality expectations.",
     delay: 0.1,
   },
   {
     icon: Sun,
-    title: "Sustainably Grown",
+    title: "Consistent by Commitment",
     description:
-      "We work with farmers who care for the earth. Tradition and responsibility in every harvest.",
+      "Driven by disciplined quality practices and deep respect for the grain, Tamaal delivers dependable rice that performs beautifully — from everyday home cooking to large-scale kitchens.",
     delay: 0.2,
   },
 ];
@@ -53,9 +53,7 @@ export default function Home() {
                 Where soil meets soul. Where grain becomes grace.
               </p>
               <p className="mt-8 text-lg leading-relaxed text-[#6B7280]">
-                Tamaal is not just rice. It's the warmth of an Indian kitchen, the
-                patience of generations, and the quiet power of nature — brought
-                to tables across the nation.
+                Tamaal is not just rice. It is the quiet confidence of consistency, the comfort of familiar meals, and the discipline of careful selection — brought together to serve kitchens with reliability, day after day.
               </p>
             </div>
           </SectionReveal>
@@ -75,7 +73,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#111]/85 via-[#111]/50 to-[#111]/35" />
               <div className="absolute bottom-8 left-8 right-8 md:left-16 md:right-16">
                 <p className="font-display max-w-2xl text-2xl font-light text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)] md:text-3xl">
-                  &ldquo;From the heart of India&rsquo;s paddy lands to your plate.&rdquo;
+                  &ldquo;From everyday meals to festive feasts — Steam or Sella, Tamaal perfects every grain.&rdquo;
+                </p>
+                <p className="mt-2 text-sm font-medium text-white/90">
+                  Varieties inspired by India&rsquo;s rice heritage. From India&rsquo;s richness to every plate it reaches.
                 </p>
               </div>
             </div>
@@ -122,9 +123,10 @@ export default function Home() {
                   Built on Trust
                 </h2>
                 <p className="mt-6 text-lg font-light leading-relaxed text-white/90">
-                  We partner with farmers who share our values. Sustainable
-                  practices, fair partnerships, and a commitment to the land that
-                  feeds us all.
+                  Trust is earned through consistency, not claims. At Tamaal, every grain is selected, evaluated, and processed with disciplined quality standards to ensure reliable performance in every meal.
+                </p>
+                <p className="mt-4 text-base font-light leading-relaxed text-white/80">
+                  No shortcuts. No exaggeration. Only honest processes, consistent quality, and a commitment to deliver rice you can depend on every single time.
                 </p>
                 <Link
                   href="/quality"
