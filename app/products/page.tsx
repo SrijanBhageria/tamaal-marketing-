@@ -7,144 +7,85 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SectionReveal from "../components/SectionReveal";
 
-const categories = ["All", "26kg", "30kg"];
+const categories = ["All", "Sella", "Special", "Supreme", "Gold", "Delight", "Tibar"];
 
 const products = [
   {
     id: 1,
     name: "Tamaal 24 Carat Sella Basmati Rice",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Sella",
     description: "Extra long basmati rice. Premium quality, delicate fragrance.",
     image: "/products/TAMAAL_24_CARAT_SELA BAS_RICE_26KG_CC_processed_by_imagy.png",
   },
   {
     id: 2,
     name: "Tamaal Biryani Special Rice 1",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Special",
     description: "Extra long basmati rice, perfect for biryani.",
     image: "/products/TAMAAL_BIRYANI_SPECIAL_RICE_1_26KG_CC_processed_by_imagy.png",
   },
   {
     id: 3,
     name: "Tamaal Classic Sella Basmati Rice",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Sella",
     description: "Classic sella extra long basmati rice. The everyday favourite.",
     image: "/products/TAMAAL_CLASSIC_SELA_BAS_RICE_26KG _CC_processed_by_imagy.png",
   },
   {
     id: 4,
     name: "Tamaal Daily Sella Basmati Rice",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Sella",
     description: "Daily sella extra long basmati rice. Fluffy, versatile, trusted.",
     image: "/products/05-12-2025 TAMAAL DAILY SELA BAS. RICE 26KG CC_processed_by_imagy.png",
   },
   {
     id: 5,
     name: "Tamaal Dubar Supreme Rice 4",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Supreme",
     description: "Dubar Supreme extra long basmati rice. Premium export grade.",
     image: "/products/05-12-2025 TAMAAL DUBAR SUPREME RICE 4 26KG CC_processed_by_imagy.png",
   },
   {
     id: 6,
     name: "Tamaal Magic Sella Basmati Rice",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Sella",
     description: "Magic sella extra long basmati rice. Aromatic and long-grained.",
     image: "/products/05-12-2025 TAMAAL MAGIC SELA BAS. RICE 26KG CC_processed_by_imagy.png",
   },
   {
     id: 7,
     name: "Tamaal Mogra Delight Rice 5",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Delight",
     description: "Mogra Delight extra long basmati rice. Fragrant and delicate.",
     image: "/products/05-12-2025 TAMAAL MOGRA DELIGHT RICE 5 26KG CC_processed_by_imagy.png",
   },
   {
     id: 8,
     name: "Tamaal Platinum Sella Basmati Rice",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Sella",
     description: "Platinum sella extra long basmati rice. Premium quality.",
     image: "/products/05-12-2025 TAMAAL PLATINUM SELA BAS. RICE 26KG CC_processed_by_imagy.png",
   },
   {
     id: 9,
     name: "Tamaal Prime Gold Rice 2",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Gold",
     description: "Prime Gold extra long basmati rice. Golden grains, superior taste.",
     image: "/products/05-12-2025 TAMAAL PRIME GOLD RICE 2 26KG CC_processed_by_imagy.png",
   },
   {
     id: 10,
     name: "Tamaal Super Tibar Rice 3",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Tibar",
     description: "Super Tibar extra long basmati rice. Perfect for special occasions.",
     image: "/products/05-12-2025 TAMAAL SUPER TIBAR RICE 3 26KG CC_processed_by_imagy.png",
   },
   {
     id: 11,
     name: "Tamaal 1121 Golden Sella",
-    category: "Basmati",
-    weight: "26kg",
+    riceType: "Gold",
     description: "1121 Golden Sella extra long basmati rice. Premium 1121 variety.",
     image: "/products/12-01-2026 TAMAAL 1121 GOLDEN SELLA 26KG CC_processed_by_imagy.png",
-  },
-  {
-    id: 12,
-    name: "Tamaal Biryani Sella Basmati Rice",
-    category: "Basmati",
-    weight: "30kg",
-    description: "Biryani sella basmati rice. Ideal for biryani and pilafs.",
-    image: "/products/14-10-2025 TAMAL BIRYANI SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
-  },
-  {
-    id: 13,
-    name: "Tamaal Classic Sella Basmati Rice (30kg)",
-    category: "Basmati",
-    weight: "30kg",
-    description: "Classic sella basmati rice in 30kg pack. The everyday favourite.",
-    image: "/products/14-10-2025 TAMAL CLASSIC SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
-  },
-  {
-    id: 14,
-    name: "Tamaal Daily Sella Basmati Rice (30kg)",
-    category: "Basmati",
-    weight: "30kg",
-    description: "Daily sella basmati rice in 30kg pack. Fluffy and versatile.",
-    image: "/products/14-10-2025 TAMAL DAILY SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
-  },
-  {
-    id: 15,
-    name: "Tamaal Pearl Sella Basmati Rice",
-    category: "Basmati",
-    weight: "30kg",
-    description: "Pearl sella basmati rice. Premium pearled grains.",
-    image: "/products/14-10-2025 TAMAL PEARL SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
-  },
-  {
-    id: 16,
-    name: "Tamaal Platinum XXXL Sella Basmati Rice",
-    category: "Basmati",
-    weight: "30kg",
-    description: "Platinum XXXL sella basmati rice. Extra-long grains, premium grade.",
-    image: "/products/14-10-2025 TAMAL PLATINUM XXXL SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
-  },
-  {
-    id: 17,
-    name: "Tamaal Prime Sella Basmati Rice",
-    category: "Basmati",
-    weight: "30kg",
-    description: "Prime sella basmati rice in 30kg pack. Export quality.",
-    image: "/products/14-10-2025 TAMAL PRIME SELLA BASMATI RICE 30 KG_processed_by_imagy.png",
   },
 ];
 
@@ -154,7 +95,7 @@ export default function ProductsPage() {
   const filteredProducts =
     activeCategory === "All"
       ? products
-      : products.filter((p) => p.weight === activeCategory);
+      : products.filter((p) => p.riceType === activeCategory);
 
   return (
     <div className="min-h-screen bg-[#F4F7F2]">
@@ -231,7 +172,7 @@ export default function ProductsPage() {
                           sizes="(max-width: 768px) 100vw, 50vw"
                         />
                         <span className="absolute left-4 top-4 rounded-full border border-white/40 bg-white/90 px-2.5 py-1 text-xs font-medium tracking-wide text-[#374151] backdrop-blur-sm">
-                          {product.weight}
+                          {product.riceType}
                         </span>
                       </div>
                       <div className="flex min-h-0 flex-1 flex-col px-4 py-3">
